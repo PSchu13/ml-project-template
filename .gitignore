@@ -150,7 +150,7 @@ activemq-data/
 # Environments
 .env
 .envrc
-.venv
+.venv/
 env/
 venv/
 ENV/
@@ -216,3 +216,19 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Project-specific ML files
+
+# Data: keep folder structure, ignore contents
+data/raw/*
+!data/raw/.gitkeep
+
+data/processed/*
+!data/processed/.gitkeep
+
+# Models: keep folder structure, ignore trained model files
+models/*
+!models/.gitkeep
+
+# Local notebooks checkpoints
+.ipynb_checkpoints/
